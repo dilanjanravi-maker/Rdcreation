@@ -1,0 +1,18 @@
+BUILD THE INSTALLABLE APK USING GITHUB ACTIONS
+==============================================
+This source package includes a GitHub Actions workflow at:
+.github/workflows/build-apk.yml
+
+1. Sign in to GitHub and create a new repository.
+2. Upload the contents of this project folder to the repository.
+3. Open the repository's Actions tab.
+4. Select "Build RD Creations APK" and click "Run workflow".
+   (It also runs automatically after a push to main/master.)
+5. Wait for the workflow to finish successfully.
+6. Open the completed workflow run and download the artifact named
+   "RD-Creations-Photo-Cropper-APK".
+7. Extract the downloaded artifact. It contains app-debug.apk.
+8. Transfer app-debug.apk to your Android phone and install it.
+
+The APK is not prebuilt in this ZIP. It must be produced by the workflow.
+The app is an offline WebView photo editor and does not request INTERNET permission.
